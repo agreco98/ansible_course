@@ -1,0 +1,35 @@
+# Claves SSH y archivos sensibles
+*.pem
+*.key
+*.crt
+*.pub
+id_rsa
+id_rsa.pub
+
+# Archivos de inventario con credenciales o IPs sensibles
+inventory.ini
+inventory.yml
+group_vars/
+host_vars/
+
+# Archivos de configuración y credenciales de Ansible
+ansible.cfg
+vault_pass.txt
+*.vault
+*.secrets
+*.enc
+
+# Archivos de salida y logs
+*.retry
+*.log
+
+# Caché y dependencias de Ansible
+~/.ansible/
+~/.ansible_cache/
+~/.ansible/tmp/
+roles/*/.cache/
+roles/*/.retry
+__pycache__/
+*.pyc
+
+~/.vscode/
