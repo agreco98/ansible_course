@@ -1,0 +1,5 @@
+- name: Deploy a web application
+  hosts: management_nodes
+  tasks:
+    - name: Ping
+      ping:
